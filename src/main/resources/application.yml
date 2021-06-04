@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: portfolio
+  datasource:
+    url: jdbc:postgresql://localhost/portfolio
+    username: postgres
+    password: admin
+  jpa:
+    generate_ddl: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+app:
+  jwtSecret: secret
+  jwtExpiration: 604800000
+server:
+  servlet:
+    context-path: /api
